@@ -257,7 +257,7 @@ public class JsonReader implements Closeable {
   static final int DEFAULT_NESTING_LIMIT = 255;
   private int nestingLimit = DEFAULT_NESTING_LIMIT;
 
-  static final int BUFFER_SIZE = 512;
+  static final int BUFFER_SIZE = 1024;
 
   /**
    * Use a manual buffer to easily read and unread upcoming characters, and also so we can create
