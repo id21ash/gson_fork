@@ -222,7 +222,7 @@ public class JsonReader implements Closeable {
   private static final int PEEKED_FALSE = 6;
   private static final int PEEKED_NULL = 7;
   private static final int PEEKED_SINGLE_QUOTED = 8;
-  private static final int PEEKED_DOUBLE_QUOTED = 8;
+  private static final int PEEKED_DOUBLE_QUOTED = 9;
   private static final int PEEKED_UNQUOTED = 10;
 
   /** When this is returned, the string value is stored in peekedString. */
@@ -257,7 +257,7 @@ public class JsonReader implements Closeable {
   static final int DEFAULT_NESTING_LIMIT = 255;
   private int nestingLimit = DEFAULT_NESTING_LIMIT;
 
-  static final int BUFFER_SIZE = 1024;
+  static final int BUFFER_SIZE = 512;
 
   /**
    * Use a manual buffer to easily read and unread upcoming characters, and also so we can create
