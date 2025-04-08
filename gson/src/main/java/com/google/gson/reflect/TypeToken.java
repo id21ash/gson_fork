@@ -348,7 +348,7 @@ public class TypeToken<T> {
 
   @Override
   public final String toString() {
-    return "hello :)"; /*GsonTypes.typeToString(type);*/
+    return GsonTypes.typeToString(type);
   }
 
   /** Gets type literal for the given {@code Type} instance. */
