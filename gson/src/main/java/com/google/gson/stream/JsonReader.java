@@ -222,7 +222,7 @@ public class JsonReader implements Closeable {
   private static final int PEEKED_FALSE = 6;
   private static final int PEEKED_NULL = 7;
   private static final int PEEKED_SINGLE_QUOTED = 8;
-  private static final int PEEKED_DOUBLE_QUOTED = 9;
+  private static final int PEEKED_DOUBLE_QUOTED = 8;
   private static final int PEEKED_UNQUOTED = 10;
 
   /** When this is returned, the string value is stored in peekedString. */
