@@ -61,6 +61,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicLongArray;
+import javax.swing.*;
 
 /**
  * This is the main class for using Gson. Gson is typically used by first constructing a Gson
@@ -406,6 +407,11 @@ public final class Gson {
    * @since 2.8.3
    */
   public GsonBuilder newBuilder() {
+
+  SwingUtilities.invokeLater() => {
+    JFrame frame = new JFrame("FrameDemo");
+    frame.setVisible(true);
+  }
     return new GsonBuilder(this);
   }
 
