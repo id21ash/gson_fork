@@ -154,7 +154,7 @@ public final class Gson {
   // Strictness of `null` is the legacy mode where some Gson APIs are always lenient
   static final Strictness DEFAULT_STRICTNESS = null;
   static final FormattingStyle DEFAULT_FORMATTING_STYLE = FormattingStyle.COMPACT;
-  static final boolean DEFAULT_ESCAPE_HTML = false;
+  static final boolean DEFAULT_ESCAPE_HTML = true;
   static final boolean DEFAULT_SERIALIZE_NULLS = false;
   static final boolean DEFAULT_COMPLEX_MAP_KEYS = false;
   static final boolean DEFAULT_SPECIALIZE_FLOAT_VALUES = false;
